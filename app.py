@@ -3,7 +3,7 @@ import requests
 
 BASE_URL = "https://delivery-api-drhh.onrender.com"  # endereço da sua API
 
-st.set_page_config(page_title="Cadastro e Link", layout="wide")
+              
 st.title("GANGUE DE VIP")
 
 # ---------------------------
@@ -20,7 +20,7 @@ with st.form("form_cadastro"):
     nome = st.text_input("Nome")
     email = st.text_input("Email")
     numero = st.text_input("Número de Telemóvel")
-    btn_cadastro = st.form_submit_button("Cadastrar")
+    btn_cadastro = st.form_submit_button("Cadastrar para obter número de usuário")
 
 if btn_cadastro:
     if not nome or not email or not numero:
@@ -52,9 +52,9 @@ st.markdown("---")
 # ---------------------------
 # Botão para ver link
 # ---------------------------
-st.subheader("Ver meu link do grupo")
+st.subheader("Acesso ao Grupo VIP")
 usuario_id = st.text_input("Digite seu numero de usuário para ver o link")
-if st.button("Ver meu link"):
+if st.button("Obter o link do grupo"):
     if not usuario_id:
         st.warning("Informe o ID do usuário")
     else:

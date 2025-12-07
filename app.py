@@ -64,8 +64,9 @@ if st.button("Ver meu link"):
                 link = res.json().get("link do grupo")
                 st.success("Acesso liberado!")
                 st.markdown(f"[Clique aqui para acessar o grupo]({link})")
-                st.markdown("Número para fazer pagamento por Express:" ":::>""922715666")
-                st.markdown("Número para enviar o comprovativo"  ":::>" "937142895")
+                st.markdown("OBS" ":" "2000 kz Subscrição mensal")
+                st.markdown("Número para fazer pagamento por Express:   922715666" )
+                st.markdown("Número para enviar o comprovativo:  926710597"  )
                 
             else:
                 try:
